@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frostware® - Contacto</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><defs><style>.center{fill:none;stroke:%2322a7d0;stroke-width:2}.inner{fill:none;stroke:%2322a7d0;stroke-width:2;animation:spin-inner 2s linear infinite}.middle{fill:none;stroke:%2322a7d0;stroke-width:2;animation:spin-middle 3s linear infinite reverse}.outer{fill:none;stroke:%2322a7d0;stroke-width:2;animation:spin-outer 4s linear infinite}@keyframes spin-inner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes spin-middle{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes spin-outer{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}</style></defs><circle class='center' cx='20' cy='20' r='5'/><circle class='inner' cx='20' cy='20' r='9' stroke-dasharray='25 10'/><circle class='middle' cx='20' cy='20' r='13' stroke-dasharray='15 20'/><circle class='outer' cx='20' cy='20' r='17' stroke-dasharray='20 15'/></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <header class="dark-header bg-gray-900/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-700 text-white"></header>
+
+    <main class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-sm font-bold uppercase text-[#22a7d0]" data-translate-key="contact_tagline">¿TIENES PREGUNTAS?</h2>
+                <p class="section-title text-3xl md:text-4xl mt-2" data-translate-key="contact_title">Ponte en contacto</p>
+                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto" data-translate-key="contact_subtitle_full">Nos encantaría saber de ti. Completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.</p>
+            </div>
+
+            <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-lg border border-gray-200">
+                <form action="#" method="POST">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="first-name" class="block text-sm font-medium text-gray-700" data-translate-key="contact_form_name">Nombre</label>
+                            <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-[#22a7d0] focus:border-[#22a7d0]">
+                        </div>
+                        <div>
+                            <label for="last-name" class="block text-sm font-medium text-gray-700" data-translate-key="contact_form_lastname">Apellido</label>
+                            <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-[#22a7d0] focus:border-[#22a7d0]">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label for="email" class="block text-sm font-medium text-gray-700" data-translate-key="contact_form_email">Correo Electrónico</label>
+                            <input type="email" name="email" id="email" autocomplete="email" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-[#22a7d0] focus:border-[#22a7d0]">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label for="subject" class="block text-sm font-medium text-gray-700" data-translate-key="contact_form_subject">Asunto</label>
+                            <input type="text" name="subject" id="subject" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-[#22a7d0] focus:border-[#22a7d0]">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label for="message" class="block text-sm font-medium text-gray-700" data-translate-key="contact_form_message">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-[#22a7d0] focus:border-[#22a7d0]"></textarea>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-right">
+                        <button type="submit" class="cta-button bg-[#22a7d0] text-white font-bold py-3 px-8 rounded-lg text-base shadow-lg">
+                            <span data-translate-key="contact_form_send">Enviar Mensaje</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white"></footer>
+
+    <div id="cart-modal" class="fixed inset-0 z-[100] hidden"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>

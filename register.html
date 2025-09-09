@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frostware® - Registro</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><defs><style>.center{fill:none;stroke:%2322a7d0;stroke-width:2}.inner{fill:none;stroke:%2322a7d0;stroke-width:2;animation:spin-inner 2s linear infinite}.middle{fill:none;stroke:%2322a7d0;stroke-width:2;animation:spin-middle 3s linear infinite reverse}.outer{fill:none;stroke:%2322a7d0;stroke-width:2;animation:spin-outer 4s linear infinite}@keyframes spin-inner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes spin-middle{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes spin-outer{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}</style></defs><circle class='center' cx='20' cy='20' r='5'/><circle class='inner' cx='20' cy='20' r='9' stroke-dasharray='25 10'/><circle class='middle' cx='20' cy='20' r='13' stroke-dasharray='15 20'/><circle class='outer' cx='20' cy='20' r='17' stroke-dasharray='20 15'/></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <header class="dark-header bg-gray-900/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-700 text-white"></header>
+
+    <main class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+                <div class="text-center mb-8">
+                    <h2 class="text-sm font-bold uppercase text-[#22a7d0]" data-translate-key="register_tagline">ÚNETE A NOSOTROS</h2>
+                    <h1 class="text-3xl font-extrabold text-gray-900 mt-2" data-translate-key="register_title">Crear Cuenta</h1>
+                    <p class="mt-4 text-gray-600" data-translate-key="register_subtitle">Crea tu cuenta y accede a todo nuestro ecosistema de herramientas.</p>
+                </div>
+
+                <form id="registerForm" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-2" data-translate-key="form_name">Nombre completo</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#22a7d0] focus:border-transparent transition-colors"
+                        >
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2" data-translate-key="form_email">Correo electrónico</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#22a7d0] focus:border-transparent transition-colors"
+                        >
+                    </div>
+
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-700 mb-2" data-translate-key="form_password">Contraseña</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            required
+                            minlength="8"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#22a7d0] focus:border-transparent transition-colors"
+                        >
+                    </div>
+
+                    <div>
+                        <label for="confirmPassword" class="block text-sm font-medium text-gray-700 mb-2" data-translate-key="form_confirm_password">Confirmar contraseña</label>
+                        <input 
+                            type="password" 
+                            id="confirmPassword" 
+                            name="confirmPassword" 
+                            required
+                            minlength="8"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#22a7d0] focus:border-transparent transition-colors"
+                        >
+                    </div>
+
+                    <div>
+                        <label for="company" class="block text-sm font-medium text-gray-700 mb-2" data-translate-key="form_company">Empresa (opcional)</label>
+                        <input 
+                            type="text" 
+                            id="company" 
+                            name="company"
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#22a7d0] focus:border-transparent transition-colors"
+                        >
+                    </div>
+
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <input 
+                                id="acceptTerms" 
+                                name="acceptTerms" 
+                                type="checkbox" 
+                                required
+                                class="w-4 h-4 text-[#22a7d0] bg-gray-100 border-gray-300 rounded focus:ring-[#22a7d0] focus:ring-2"
+                            >
+                            <label for="acceptTerms" class="ml-2 text-sm text-gray-600" data-translate-key="form_terms">
+                                Acepto los <a href="terms.html" class="text-[#22a7d0] hover:underline">términos y condiciones</a>
+                            </label>
+                        </div>
+
+                        <div class="flex items-center">
+                            <input 
+                                id="newsletter" 
+                                name="newsletter" 
+                                type="checkbox"
+                                class="w-4 h-4 text-[#22a7d0] bg-gray-100 border-gray-300 rounded focus:ring-[#22a7d0] focus:ring-2"
+                            >
+                            <label for="newsletter" class="ml-2 text-sm text-gray-600" data-translate-key="form_newsletter">
+                                Quiero recibir actualizaciones por correo
+                            </label>
+                        </div>
+                    </div>
+
+                    <button 
+                        type="submit" 
+                        class="w-full bg-[#22a7d0] text-white font-bold py-3 px-4 rounded-lg hover:bg-[#1a8db8] transition-colors cta-button"
+                        data-translate-key="form_submit"
+                    >
+                        Crear Cuenta
+                    </button>
+
+                    <div class="text-center pt-4">
+                        <span class="text-gray-600 text-sm" data-translate-key="form_login_text">¿Ya tienes cuenta?</span>
+                        <a href="#" class="text-[#22a7d0] hover:underline font-medium ml-1" data-translate-key="form_login_link">Iniciar sesión</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white"></footer>
+    <div id="cart-modal" class="fixed inset-0 z-[100] hidden"></div>
+    
+    <script src="main.js"></script>
+    <script>
+        // Form validation
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            
+            if (password !== confirmPassword) {
+                alert('Las contraseñas no coinciden');
+                return;
+            }
+            
+            if (password.length < 8) {
+                alert('La contraseña debe tener al menos 8 caracteres');
+                return;
+            }
+            
+            // Simulate successful registration
+            alert('¡Cuenta creada exitosamente! Te redirigiremos a la página principal.');
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
