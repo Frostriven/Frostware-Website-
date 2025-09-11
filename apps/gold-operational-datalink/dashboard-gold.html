@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOLD Operational Datalink Dashboard - Frostware®</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><defs><style>.center{fill:none;stroke:%2322a7d0;stroke-width:2}.inner{fill:none;stroke:%2322a7d0;stroke-width:2;animation:spin-inner 2s linear infinite}.middle{fill:none;stroke:%2322a7d0;stroke-width:2;animation:spin-middle 3s linear infinite reverse}.outer{fill:none;stroke:%2322a7d0;stroke-width:2;animation:spin-outer 4s linear infinite}@keyframes spin-inner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes spin-middle{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes spin-outer{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}</style></defs><circle class='center' cx='20' cy='20' r='5'/><circle class='inner' cx='20' cy='20' r='9' stroke-dasharray='25 10'/><circle class='middle' cx='20' cy='20' r='13' stroke-dasharray='15 20'/><circle class='outer' cx='20' cy='20' r='17' stroke-dasharray='20 15'/></svg>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <header class="dark-header bg-gray-900/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-700 text-white"></header>
+
+    <main class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <div class="mb-8">
+                        <div class="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl p-6 border border-orange-200 shadow-sm">
+                            <div class="flex items-center justify-center">
+                                <a href="../../pages/products.html" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#22a7d0] to-[#1e96c8] text-white font-semibold rounded-lg hover:from-[#1e96c8] hover:to-[#1a8bb8] transition-all duration-300 group shadow-lg hover:shadow-xl transform hover:scale-105">
+                                    <svg class="w-5 h-5 mr-3 transition-transform duration-300 group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                    </svg>
+                                    <span class="text-lg">Explorar Todos los Productos</span>
+                                    <svg class="w-4 h-4 ml-2 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="text-center text-orange-700 text-sm mt-3">
+                                Descubre más herramientas profesionales para aviación
+                            </p>
+                        </div>
+                    </div>
+                    <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">GOLD Global Operational Datalink</h1>
+                    <p class="text-gray-600 max-w-3xl mx-auto mb-8">Advanced training platform for Global Operational Datalink procedures. Master CPDLC, ADS-C, and modern aviation communication protocols.</p>
+                    
+                    <div class="flex flex-wrap justify-center gap-4 mb-8">
+                        <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">GOLD Standards</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">CPDLC Training</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">ADS-C Protocol</span>
+                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">Coming Soon</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                    <div class="lg:col-span-2">
+                        <div class="bg-white rounded-lg shadow-lg border border-gray-200 p-8">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-6">Training Modules - Coming Q1 2025</h2>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="border border-orange-200 bg-orange-50 rounded-lg p-4 opacity-75">
+                                    <h3 class="font-semibold text-gray-700 mb-2">CPDLC Operations</h3>
+                                    <p class="text-sm text-gray-600 mb-3">Controller-Pilot Data Link Communications</p>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs text-orange-600 font-medium">IN DEVELOPMENT</span>
+                                        <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="border border-orange-200 bg-orange-50 rounded-lg p-4 opacity-75">
+                                    <h3 class="font-semibold text-gray-700 mb-2">ADS-C Procedures</h3>
+                                    <p class="text-sm text-gray-600 mb-3">Automatic Dependent Surveillance-Contract</p>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs text-orange-600 font-medium">IN DEVELOPMENT</span>
+                                        <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="border border-orange-200 bg-orange-50 rounded-lg p-4 opacity-75">
+                                    <h3 class="font-semibold text-gray-700 mb-2">Message Protocols</h3>
+                                    <p class="text-sm text-gray-600 mb-3">Standard message formats and routing</p>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs text-orange-600 font-medium">IN DEVELOPMENT</span>
+                                        <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="border border-orange-200 bg-orange-50 rounded-lg p-4 opacity-75">
+                                    <h3 class="font-semibold text-gray-700 mb-2">System Integration</h3>
+                                    <p class="text-sm text-gray-600 mb-3">Aircraft systems and datalink integration</p>
+                                    <div class="flex justify-between items-center">
+                                        <span class="text-xs text-orange-600 font-medium">IN DEVELOPMENT</span>
+                                        <svg class="w-4 h-4 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-8 p-6 bg-gradient-to-r from-orange-50 to-amber-50 rounded-lg border border-orange-200">
+                                <h3 class="font-semibold text-orange-900 mb-3 flex items-center">
+                                    <svg class="w-5 h-5 mr-2 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    Coming Soon - Q1 2025
+                                </h3>
+                                <ul class="text-sm text-orange-800 space-y-1">
+                                    <li>• Interactive CPDLC simulation environment</li>
+                                    <li>• Real-world scenario-based training</li>
+                                    <li>• ICAO GOLD standard compliance validation</li>
+                                    <li>• Multi-aircraft type datalink procedures</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-lg shadow-lg border border-gray-200 p-6">
+                            <h3 class="text-lg font-bold text-gray-900 mb-4">Development Progress</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-sm text-gray-600">CPDLC Modules</span>
+                                        <span class="text-sm font-medium">45%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-orange-500 h-2 rounded-full" style="width: 45%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-sm text-gray-600">ADS-C Training</span>
+                                        <span class="text-sm font-medium">30%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-orange-500 h-2 rounded-full" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-2">
+                                        <span class="text-sm text-gray-600">Simulations</span>
+                                        <span class="text-sm font-medium">20%</span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                        <div class="bg-orange-500 h-2 rounded-full" style="width: 20%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-lg shadow-lg border border-gray-200 p-6">
+                            <h3 class="text-lg font-bold text-gray-900 mb-4">Study Resources</h3>
+                            <div class="space-y-3">
+                                <div class="flex justify-center">
+                                    <a href="guide.html" class="inline-flex items-center justify-center px-8 py-3 bg-[#22a7d0] text-white font-bold rounded-lg hover:bg-[#1e96c8] transition-colors shadow-lg transform hover:scale-105 duration-200">
+                                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253z"></path>
+                                        </svg>
+                                        Access Study Guide
+                                    </a>
+                                </div>
+                                <button onclick="window.open('https://www.icao.int/airnavigation/GOLD/', '_blank')" class="w-full inline-flex items-center justify-center px-4 py-2 bg-gray-100 text-gray-700 font-medium rounded-lg hover:bg-gray-200 transition-colors">
+                                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                    ICAO GOLD Portal
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-orange-500 to-amber-600 rounded-lg p-6 text-white">
+                            <h3 class="text-lg font-bold mb-2">Stay Updated</h3>
+                            <p class="text-orange-100 text-sm mb-4">Be notified when GOLD training launches in Q1 2025.</p>
+                            <button onclick="alert('Notification system will be implemented soon!')" class="w-full bg-white text-orange-600 font-semibold py-2 px-4 rounded-lg hover:bg-orange-50 transition-colors">
+                                Get Notified
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white"></footer>
+    <div id="cart-modal" class="fixed inset-0 z-[100] hidden"></div>
+    
+    <script src="../../js/main.js"></script>
+</body>
+</html>

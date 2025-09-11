@@ -462,18 +462,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const footerElement = document.querySelector('footer');
     const cartModalElement = document.getElementById('cart-modal');
 
+    // Detect if we're in pages subdirectory, apps subdirectory, or root
+    const isInPagesDir = window.location.pathname.includes('/pages/');
+    const isInAppsDir = window.location.pathname.includes('/apps/');
+    const basePath = (isInPagesDir || isInAppsDir) ? 
+        (isInAppsDir ? '../../' : '../') : '';
+    
     const headerContent = `
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="index.html" class="flex items-center">
+            <a href="${basePath}index.html" class="flex items-center">
                 <div class="logo-icon mr-2"><div class="arc-1"></div><div class="arc-2"></div></div>
                 <span class="text-2xl font-bold tracking-tight">Frostware®</span>
             </a>
             <nav class="hidden md:flex items-center space-x-2 text-sm">
-                <a href="index.html" class="nav-link px-3 py-2 rounded-md" data-page="index" data-translate-key="nav_home">Inicio</a>
-                <a href="pages/products.html" class="nav-link px-3 py-2 rounded-md" data-page="products" data-translate-key="nav_products">Productos</a>
-                <a href="pages/terms.html" class="nav-link px-3 py-2 rounded-md" data-page="terms" data-translate-key="nav_terms">Términos</a>
-                <a href="pages/privacy.html" class="nav-link px-3 py-2 rounded-md" data-page="privacy" data-translate-key="nav_privacy">Privacidad</a>
-                <a href="pages/contact.html" class="nav-link px-3 py-2 rounded-md" data-page="contact" data-translate-key="nav_contact">Contacto</a>
+                <a href="${basePath}index.html" class="nav-link px-3 py-2 rounded-md" data-page="index" data-translate-key="nav_home">Inicio</a>
+                <a href="${basePath}pages/products.html" class="nav-link px-3 py-2 rounded-md" data-page="products" data-translate-key="nav_products">Productos</a>
+                <a href="${basePath}pages/terms.html" class="nav-link px-3 py-2 rounded-md" data-page="terms" data-translate-key="nav_terms">Términos</a>
+                <a href="${basePath}pages/privacy.html" class="nav-link px-3 py-2 rounded-md" data-page="privacy" data-translate-key="nav_privacy">Privacidad</a>
+                <a href="${basePath}pages/contact.html" class="nav-link px-3 py-2 rounded-md" data-page="contact" data-translate-key="nav_contact">Contacto</a>
             </nav>
             <div class="flex items-center space-x-4">
                 <div class="relative">
@@ -491,7 +497,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
                 <button id="cart-button" class="text-gray-300 hover:text-white"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg></button>
-                <div class="border-l border-gray-600 pl-4"><a href="pages/register.html" class="text-sm font-semibold text-gray-300 hover:text-white" data-translate-key="auth_register">Registrarse</a></div>
+                <div class="border-l border-gray-600 pl-4"><a href="${basePath}pages/register.html" class="text-sm font-semibold text-gray-300 hover:text-white" data-translate-key="auth_register">Registrarse</a></div>
             </div>
         </div>`;
     if (headerElement) headerElement.innerHTML = headerContent;
@@ -500,7 +506,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="container mx-auto px-6 py-12">
              <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
                 <div>
-                    <a href="index.html" class="flex items-center justify-center md:justify-start mb-4">
+                    <a href="${basePath}index.html" class="flex items-center justify-center md:justify-start mb-4">
                        <div class="logo-icon mr-2"><div class="arc-1"></div><div class="arc-2"></div></div>
                        <span class="text-2xl font-bold text-white tracking-tight">Frostware®</span>
                     </a>
@@ -509,8 +515,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div>
                     <h3 class="font-bold uppercase tracking-wider mb-4" data-translate-key="footer_legal">Legal</h3>
                     <nav class="flex flex-col space-y-2">
-                        <a href="pages/terms.html" class="text-gray-400 hover:text-white transition-colors" data-translate-key="footer_terms">Términos y Condiciones</a>
-                        <a href="pages/privacy.html" class="text-gray-400 hover:text-white transition-colors" data-translate-key="footer_privacy">Política de Privacidad</a>
+                        <a href="${basePath}pages/terms.html" class="text-gray-400 hover:text-white transition-colors" data-translate-key="footer_terms">Términos y Condiciones</a>
+                        <a href="${basePath}pages/privacy.html" class="text-gray-400 hover:text-white transition-colors" data-translate-key="footer_privacy">Política de Privacidad</a>
                     </nav>
                 </div>
                 <div>
