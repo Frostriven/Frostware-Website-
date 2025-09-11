@@ -439,23 +439,8 @@ function changeLanguage(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Smooth Page Navigation ---
-    document.querySelectorAll('a[href$=".html"]').forEach(link => {
-        link.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            if (href && href !== '#' && !href.startsWith('http')) {
-                e.preventDefault();
-                const main = document.querySelector('main');
-                if (main) {
-                    main.style.opacity = '0';
-                    main.style.transform = 'scale(1.05)';
-                }
-                setTimeout(() => {
-                    window.location.href = href;
-                }, 300);
-            }
-        });
-    });
+    // --- Simple Page Navigation (Fixed) ---
+    // Removed transition effects that were causing 404 errors
 
     // --- Inject Reusable HTML ---
     const headerElement = document.querySelector('header');
